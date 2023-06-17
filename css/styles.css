@@ -1,3 +1,7 @@
-body{
-
+:root {
+    --primary-color: #2584ff;
+    --secondary-color: #00d9ff;
+    --accent-color: #ff3400;
+    --headings-color: #1b0760;
+    --body-color: #918ca4;
 }
