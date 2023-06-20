@@ -562,3 +562,37 @@ a {
         margin: 0 2rem;
     }
 }
+
+/* Collapsibles */
+.collapsible__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.collapsible__heading {
+    margin: 0;
+    font-size: 3rem;
+}
+
+.collapsible__chevron {
+    transform: rotate(-90deg);
+    transition: all 0.3s ease;
+}
+
+.collapsible__content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+
+}
+
+.collapsed--expanded .collapsible__chevron {
+    transform: rotate(0deg);
+}
+
+.collapsed--expanded .collapsible__content {
+    max-height: 100vh;
+    opacity: 1;
+}
