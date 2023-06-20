@@ -201,7 +201,7 @@ a {
 /* Icons  */
 .btn {
     border-radius: 40px;
-    border: 2px solid white;
+    border: none;
     color: white;
     cursor: pointer;
     font-size: 1.8rem;
@@ -235,6 +235,11 @@ a {
 
 .btn--accent:hover {
     background-color: #ec3000;
+}
+
+.btn--stretched {
+    padding: 2rem 6rem;
+
 }
 
 .btn--block {
@@ -511,5 +516,49 @@ a {
     .testimonial .quote {
         margin-left: 6rem;
         margin-right: 0;
+    }
+}
+
+/* Callouts */
+.callout {
+    padding: 4rem;
+    border-radius: 5px;
+
+}
+
+.callout--primary {
+    color: #fff;
+    background: var(--primary-color);
+}
+
+.callout__heading {
+    color: #fff;
+    margin-top: 0;
+    font-size: 3rem;
+}
+
+.callout .btn {
+    align-self: center;
+    justify-self: center;
+}
+
+.callout__content {
+    text-align: center;
+}
+
+@media screen and (min-width:768px) {
+    .callout .grid--cols-2 {
+        grid-template-columns: 1fr auto;
+    }
+
+    .callout__content {
+        text-align: left;
+        width: 100%;
+    }
+
+    .callout .btn {
+        align-self: center;
+        justify-self: start;
+        margin: 0 2rem;
     }
 }
