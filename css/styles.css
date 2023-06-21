@@ -391,7 +391,7 @@ a {
 }
 
 .plan--popular {
-    transform: scale(1.1);
+    transform: scale(1.1);    
 }
 
 .plan:hover {
@@ -788,29 +788,10 @@ a {
 
 /* Plans Block */
 .block-plans .grid {
-    gap: 4rem;
+    gap: 8rem 4rem;
 }
 
 .block-plans .card {
     max-width: 500px;
     margin: 0 auto;
-}
-
-@media screen and (min-width:1024px) {
-    .block-plans {}
-
-    .block-plans .plan {
-        flex: 1;
-        transition: all 0.3s ease;
-    }
-
-    .block-plans .plan:hover {
-        transform: scale(1.1);
-    }
-
-
-    .block-plans .plan--popular {
-        transform: scale(1.1);
-        box-shadow: 0 0 30px 20px rgba(204, 204, 204, 0.1);
-    }
 }
