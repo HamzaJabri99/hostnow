@@ -574,7 +574,9 @@ a {
     border-radius: 5px;
 
 }
-
+.callout-signup{
+    transform: translateY(5rem);
+}
 .callout--primary {
     color: #fff;
     background: var(--primary-color);
