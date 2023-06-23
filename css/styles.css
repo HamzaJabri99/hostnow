@@ -223,7 +223,7 @@ a {
     font-weight: 600;
     margin: 1rem 0;
     outline: none;
-    padding: 2rem 3rem;
+    padding: 2rem 4vw;
     text-transform: uppercase;
     text-align: center;
     white-space: nowrap;
@@ -312,10 +312,12 @@ a {
     border: none;
     flex-grow: 1;
     padding: 1.5rem 2rem;
+    width: 0;
 }
 
 .input-group .btn {
     margin: 4px;
+
 }
 
 .input-group .icon {
@@ -398,6 +400,8 @@ a {
 
 .plan .list__item {
     margin-bottom: 2rem;
+    color: var(--headings-color);
+
 }
 
 .plan--popular {
@@ -785,6 +789,15 @@ a {
     justify-items: center;
     max-width: 700px;
     margin: 0 auto;
+    color: var(--headings-color);
+
+}
+
+@media screen and (max-width:375px) {
+    .block-domain__prices {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
 }
 
 @media screen and (min-width:768px) {
